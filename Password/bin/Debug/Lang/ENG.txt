@@ -1,0 +1,5 @@
+LOGIN = Login
+PASSWORD = Password
+BUTTON = Button
+PUSHTHEBTN = Push the button and get result
+SHOWPASSWORD = Show password

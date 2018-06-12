@@ -48,6 +48,7 @@
             this.JustAButton.TabIndex = 0;
             this.JustAButton.Text = "Кнопка";
             this.JustAButton.UseVisualStyleBackColor = true;
+            this.JustAButton.Click += new System.EventHandler(this.JustAButton_Click);
             // 
             // LoginTextBox
             // 
@@ -106,7 +107,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(532, 120);
+            this.ClientSize = new System.Drawing.Size(615, 120);
             this.Controls.Add(this.PasswordLabel);
             this.Controls.Add(this.LoginLabel);
             this.Controls.Add(this.PasswordTextBox);
