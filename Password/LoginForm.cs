@@ -16,13 +16,16 @@ namespace Password
         private void ShowPasswordToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ShowPasswordStart = Environment.TickCount;
+            PasswordTextBox.UseSystemPasswordChar = false;
+        }
+
+        private void MainTimer_Tick(object sender, EventArgs e)
+        {
             int CurrentTime = Environment.TickCount;
-            while (CurrentTime - ShowPasswordStart < 3000)
+            if (CurrentTime - ShowPasswordStart >= 3000)
             {
-                PasswordTextBox.UseSystemPasswordChar = false;
-                CurrentTime = Environment.TickCount;
+                PasswordTextBox.UseSystemPasswordChar = true;
             }
-            PasswordTextBox.UseSystemPasswordChar = true;
         }
 
         private void LoginForm_Load(object sender, EventArgs e)

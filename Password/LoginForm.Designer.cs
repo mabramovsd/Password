@@ -36,6 +36,7 @@
             this.ShowPasswordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.LoginLabel = new System.Windows.Forms.Label();
             this.PasswordLabel = new System.Windows.Forms.Label();
+            this.MainTimer = new System.Windows.Forms.Timer(this.components);
             this.MainContextMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -96,6 +97,11 @@
             this.PasswordLabel.TabIndex = 4;
             this.PasswordLabel.Text = "Пароль";
             // 
+            // MainTimer
+            // 
+            this.MainTimer.Enabled = true;
+            this.MainTimer.Tick += new System.EventHandler(this.MainTimer_Tick);
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -124,6 +130,7 @@
         private System.Windows.Forms.ToolStripMenuItem ShowPasswordToolStripMenuItem;
         private System.Windows.Forms.Label LoginLabel;
         private System.Windows.Forms.Label PasswordLabel;
+        private System.Windows.Forms.Timer MainTimer;
     }
 }
 
