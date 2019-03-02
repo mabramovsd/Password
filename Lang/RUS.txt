@@ -1,0 +1,5 @@
+﻿LOGIN = Логин
+PASSWORD = Пароль
+BUTTON = Кнопка
+PUSHTHEBTN = Нажми на кнопку и получишь результат
+SHOWPASSWORD = Показать пароль
